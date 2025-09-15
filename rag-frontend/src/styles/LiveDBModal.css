@@ -1,0 +1,100 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: var(--secondary-bg);
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--accent-color);
+}
+
+/* --- Added fieldset styles --- */
+.form-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-fieldset:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* ----------------------------- */
+
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e94560;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #a7a9be;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 6px;
+  background-color: #1a1a2e;
+  color: white;
+  font-family: var(--font-family);
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #e94560;
+  color: white;
+}
+
+.modal-buttons button[type="submit"]:hover {
+  background-color: #d43d51;
+}
+
+.modal-buttons button[type="button"] {
+  background-color: #6c757d;
+  color: white;
+}
+
+.modal-buttons button[type="button"]:hover {
+  background-color: #5a6268;
+}
